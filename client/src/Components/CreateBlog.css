@@ -1,0 +1,64 @@
+.create-blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: calc(100vh - 56px); /* Adjust for the height of your navbar */
+  box-sizing: border-box;
+}
+
+.create-blog-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 100%; /* Limit the width of the card */
+  width: 100%; /* Ensure the card takes full width of its container */
+}
+
+.create-blog-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group .btn {
+  margin-right: 10px;
+}
+
+/* Add the rest of your existing styles */
