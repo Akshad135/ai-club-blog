@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 80vh; /* Adjust for the height of your navbar */
+  height: 80vh;
   box-sizing: border-box;
 }
 
@@ -12,8 +12,8 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  max-width: 100%; /* Limit the width of the card */
-  width: 100%; /* Ensure the card takes full width of its container */
+  max-width: 100%;
+  width: 100%;
 }
 
 .create-blog-title {
@@ -60,5 +60,3 @@ textarea {
 .button-group .btn {
   margin-right: 10px;
 }
-
-/* Add the rest of your existing styles */

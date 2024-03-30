@@ -63,11 +63,11 @@
 }
 
 .navbar ul li:first-child {
-  margin-left: auto; /* Push the items to the right */
+  margin-left: auto;
 }
 
 .navbar ul li:last-child {
-  margin-left: 0; /* Reset margin for the last child */
+  margin-left: 0;
 }
 
 .nav__link,

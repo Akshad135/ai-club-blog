@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "../Styles/CreateBlog.css"; // Import CSS file for styling
+import "../Styles/CreateBlog.css";
 
 const CreateBlog = () => {
   const navigate = useNavigate();
@@ -12,13 +12,12 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Send a POST request to the backend to create a new blog post
       await axios.post("http://localhost:6005/api/create", {
         title,
         content,
         author,
       });
-      // Redirect the user to the dashboard after successfully creating a blog post
+
       navigate("/dashboard");
     } catch (error) {
       console.error("Error creating blog post:", error);

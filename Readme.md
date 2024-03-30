@@ -23,6 +23,12 @@
         <li>Back-end </li>
         Head over to `server` directory and install the node modules using `npm install`.
     </ul>
+<li>Adding the tokens (create `.env` with following ids) </li>
+    <ul>    
+        <li>GOOGLE_CLIENT_ID="YourClientID"</li>
+        <li>GOOGLE_CLIENT_SECRET="YourSecret"</li>
+        <li>MongoDB="YourConnectionString"</li> 
+    </ul>
 <li> Running the scripts </li>
     <ul>
         <li>Front-end </li>

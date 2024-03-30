@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../Styles/EditBlog.css"; // Import CSS file for styling
+import "../Styles/EditBlog.css";
 
 const EditBlogPost = ({ postId }) => {
   const [formData, setFormData] = useState({
@@ -35,13 +35,12 @@ const EditBlogPost = ({ postId }) => {
     e.preventDefault();
     try {
       await axios.put(`http://localhost:6005/api/update/${postId}`, formData);
-      // Handle success, maybe show a success message or redirect to the updated blog post
+
       console.log("Blog post updated successfully!");
-      // Reload the page after updating the blog post
+
       window.location.reload();
     } catch (error) {
       console.log(error);
-      // Handle error
     }
   };
 

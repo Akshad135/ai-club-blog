@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-import EditBlogPost from "./editblog"; // Corrected import path
-import CreateBlogPost from "./CreateBlog"; // Corrected import path
+import EditBlogPost from "./editblog";
+import CreateBlogPost from "./CreateBlog";
 import "../Styles/dashboard.css";
 
 const Dashboard = () => {

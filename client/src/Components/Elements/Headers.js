@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import axios from "axios";
-import "../Styles/header.css"; // Make sure to import the CSS file used for styling
+import "../Styles/header.css";
 
 const Headers = () => {
   const [userdata, setUserdata] = useState({});
-  const location = useLocation(); // Get current location
+  const location = useLocation();
 
   console.log("response", userdata);
 

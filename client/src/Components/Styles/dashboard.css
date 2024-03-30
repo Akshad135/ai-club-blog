@@ -1,25 +1,20 @@
-/* dashboard.css */
-
-/* Apply existing styles to both normal display of cards and the editing card */
 .blog-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Adjusted justify-content */
-  margin: 0 auto; /* Center the cards */
-  max-width: 1000px; /* Adjust this value based on your layout */
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .blog-card {
-  width: calc(
-    33.33% - 20px
-  ); /* Adjusted width to accommodate three cards per row */
-  margin-bottom: 20px; /* Added margin bottom for spacing */
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Ensure padding and border don't affect the width */
-  overflow: auto; /* Enable overflow */
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .blog-card h3 {
@@ -31,8 +26,8 @@
 }
 
 .blog-card-content {
-  text-align: left; /* Align content to the left */
-  overflow: auto; /* Enable overflow for long content */
+  text-align: left;
+  overflow: auto;
 }
 
 .blog-buttons {
@@ -40,20 +35,19 @@
   justify-content: center;
 }
 
-/* Styles for buttons inside blog cards */
 .blog-card button {
   margin-right: 5px;
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #333; /* Button color */
-  color: white; /* Text color */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
 .blog-card button:hover {
-  background-color: black; /* Darker button color on hover */
+  background-color: black;
 }
 
 .create-blog-button {
@@ -62,12 +56,12 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #333; /* Button color */
-  color: white; /* Text color */
-  transition: background-color 0.3s ease; /* Smooth transition */
-  text-decoration: none; /* Remove underline */
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .create-blog-button:hover {
-  background-color: black; /* Darker button color on hover */
+  background-color: black;
 }
