@@ -1,5 +1,3 @@
-// EditBlogPost.js
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../Styles/EditBlog.css";
@@ -8,7 +6,6 @@ const EditBlogPost = ({ postId }) => {
   const [formData, setFormData] = useState({
     title: "",
     content: "",
-    author: "",
   });
 
   useEffect(() => {
@@ -17,8 +14,8 @@ const EditBlogPost = ({ postId }) => {
         const response = await axios.get(
           `http://localhost:6005/api/posts/${postId}`
         );
-        const { title, content, author } = response.data;
-        setFormData({ title, content, author });
+        const { title, content } = response.data;
+        setFormData({ title, content });
       } catch (error) {
         console.log(error);
       }
@@ -28,7 +25,8 @@ const EditBlogPost = ({ postId }) => {
   }, [postId]);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
@@ -63,16 +61,6 @@ const EditBlogPost = ({ postId }) => {
           <textarea
             name="content"
             value={formData.content}
-            onChange={handleChange}
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label>Author:</label>
-          <input
-            type="text"
-            name="author"
-            value={formData.author}
             onChange={handleChange}
             className="form-control"
           />
