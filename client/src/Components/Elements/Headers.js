@@ -63,7 +63,7 @@ const Headers = () => {
                   </NavLink>
                 ) : (
                   <button className="logout__button" onClick={logout}>
-                    Logout 😦
+                    Logout
                   </button>
                 )}
               </li>
