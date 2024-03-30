@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./CreateBlog.css"; // Import CSS file for styling
+import "../Styles/CreateBlog.css"; // Import CSS file for styling
 
 const CreateBlog = () => {
   const navigate = useNavigate();

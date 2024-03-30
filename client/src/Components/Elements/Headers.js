@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import axios from "axios";
-import "./header.css"; // Make sure to import the CSS file used for styling
+import "../Styles/header.css"; // Make sure to import the CSS file used for styling
 
 const Headers = () => {
   const [userdata, setUserdata] = useState({});

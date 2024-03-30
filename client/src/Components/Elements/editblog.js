@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./EditBlog.css"; // Import CSS file for styling
+import "../Styles/EditBlog.css"; // Import CSS file for styling
 
 const EditBlogPost = ({ postId }) => {
   const [formData, setFormData] = useState({

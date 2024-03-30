@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import EditBlogPost from "./editblog"; // Corrected import path
 import CreateBlogPost from "./CreateBlog"; // Corrected import path
-import "./dashboard.css";
+import "../Styles/dashboard.css";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -62,7 +62,15 @@ const Dashboard = () => {
                     ) : (
                       <>
                         <h3>{blog.title}</h3>
-                        <p>{blog.content}</p>
+                        <div
+                          style={{
+                            maxHeight: "325px",
+
+                            overflow: "auto",
+                          }}
+                        >
+                          <p>{blog.content}</p>
+                        </div>
                         <p>Author: {blog.author}</p>
                         <div className="blog-buttons">
                           <button onClick={() => handleDeleteBlog(blog._id)}>
@@ -79,9 +87,12 @@ const Dashboard = () => {
               </div>
             </div>
           )}
-
-          <Link to="/create">
-            <button onClick={handleCreateBlog}>Create Blog</button>
+          <Link
+            to="/create"
+            className="create-blog-button"
+            onClick={handleCreateBlog}
+          >
+            Create Blog
           </Link>
         </div>
       )}

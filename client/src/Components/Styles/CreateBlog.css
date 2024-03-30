@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: calc(100vh - 56px); /* Adjust for the height of your navbar */
+  height: 80vh; /* Adjust for the height of your navbar */
   box-sizing: border-box;
 }
 
@@ -45,12 +45,12 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #333;
   color: #fff;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #000;
 }
 
 .button-group {
